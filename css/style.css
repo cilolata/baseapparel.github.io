@@ -57,6 +57,7 @@ span {
   height: 100vh; }
 
 #form {
+  position: relative;
   margin-left: 18%; }
 
 .input-email {
@@ -65,27 +66,27 @@ span {
   z-index: 2;
   background: linear-gradient(135deg, white, #fff5f5);
   border-radius: 500px;
+  z-index: 2;
   width: 69%;
   height: 50px; }
 
-.input-email:focus {
-  outline: none; }
-
-::-webkit-input-placeholder {
-  font-size: 0.8em;
+.label-email {
+  width: 30%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  margin-left: 20px;
+  margin-top: 2%;
+  transition: 0.5s;
   color: #ce9797; }
 
-:-moz-placeholder {
-  font-size: 0.8em;
-  color: #ce9797; }
-
-::-moz-placeholder {
-  font-size: 0.8em;
-  color: #ce9797; }
-
-:-ms-input-placeholder {
-  font-size: 0.8em;
-  color: #ce9797; }
+.input-email:focus + .label-email {
+  top: -20%;
+  z-index: 3;
+  transition: 0.2s; }
 
 .btn {
   position: absolute;
@@ -141,12 +142,8 @@ footer {
     margin-left: 5%;
     height: 8vh; }
 
-  a.navbar-brand {
-    padding: 0;
-    margin: 0; }
-
   .logo-mobile {
-    width: 80%;
+    width: 30%;
     margin-bottom: 7%; }
 
   section.principal {
@@ -163,6 +160,9 @@ footer {
     padding: 5%;
     width: 100%;
     text-align: center; }
+
+  .label-email {
+    margin-left: 20%; }
 
   .foto {
     background-image: url("../images/hero-mobile.jpg");

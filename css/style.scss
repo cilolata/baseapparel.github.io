@@ -87,6 +87,7 @@ span{
 }
 
 #form{
+    position: relative;
     margin-left: 18%;
 
 }
@@ -97,33 +98,31 @@ span{
     z-index: 2;
     background: linear-gradient( 135deg, hsl(0, 0%, 100%),hsl(0, 100%, 98%));
     border-radius: 500px;    
+    z-index: 2;
     @include tamanho(69%, 50px);
 
 }
 
-.input-email:focus{
-    outline: none;
+.label-email{
+    width: 30%;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    margin-left: 20px;
+    margin-top: 2%;
+    transition: 0.5s;
+    color: hsl(0, 36%, 70%);
 }
 
-::-webkit-input-placeholder {
-    font-size: 0.8em;
-    color: hsl(0, 36%, 70%);
- }
-  
- :-moz-placeholder { 
-     font-size: 0.8em;  
-     color: hsl(0, 36%, 70%);
- }
-  
- ::-moz-placeholder { 
-     font-size: 0.8em; 
-     color: hsl(0, 36%, 70%);
- }
-  
- :-ms-input-placeholder {  
-     font-size: 0.8em;  
-     color: hsl(0, 36%, 70%);
- }
+.input-email:focus + .label-email{
+    top:-20%;
+    z-index: 3;
+    transition: 0.2s;
+}
+
 
 .btn{
     position: absolute;
@@ -193,13 +192,8 @@ footer{
         height: 8vh;
     }
 
-    a.navbar-brand{
-        padding: 0;
-        margin: 0;
-    }
-
     .logo-mobile{
-        width: 80%;
+        width: 30%;
         margin-bottom: 7%;
     }
 
@@ -219,6 +213,10 @@ footer{
         padding: 5%;
         width: 100%;
         text-align: center;
+    }
+
+    .label-email{
+        margin-left: 20%;
     }
 
     .foto{

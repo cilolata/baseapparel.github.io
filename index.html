@@ -17,9 +17,7 @@
     <body>
         <header class="d-lg-none d-md-block d-sm-block">
             <nav class="navbar">
-                <a class="navbar-brand" href="#">
-                    <img class="logo-mobile" src="images/logo.svg" alt="">
-                </a>
+                    <img class=" navbar-brand logo-mobile" src="images/logo.svg" alt="logo-base-apparel">
             </nav>
         </header>
         <main>
@@ -35,8 +33,9 @@
                                 our new fashion store. Add your email below to stay up-to-date with announcements and our 
                                 launch deals.</p>
                                 <form  id="form" action="">
-                                    <input class="input-email borda-padrao" type="email" name="email" placeholder="Email Address">
-                                    <button class="btn" type="button" ><img src="images/icon-arrow.svg" alt=""></i>
+                                    <input class="input-email borda-padrao" type="text" name="email" aria-label="email">
+                                    <label for="email" class="label-email">Email Address</label>
+                                    <button class="btn" type="submit" aria-label="enviar"><img src="images/icon-arrow.svg" alt=""></i>
                                     </button>
                                     <p class="texto-erro" id="mensagem"></p>
                                 </form>
