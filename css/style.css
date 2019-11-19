@@ -1,0 +1,215 @@
+span, .paragrafo {
+  color: #ce9797; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  overflow-x: hidden; }
+
+html {
+  height: 100%; }
+
+.principal {
+  background-image: url("../images/bg-pattern-desktop.svg");
+  background-position-x: center;
+  background-size: cover; }
+
+.cabecalho {
+  height: 15%; }
+
+.logo {
+  margin-left: 20%;
+  margin-top: 5%;
+  width: 20%; }
+
+.caixa-textos {
+  height: 60%;
+  margin-top: 10%; }
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 20%;
+  margin-bottom: 2%;
+  font-weight: 600;
+  letter-spacing: 15px;
+  font-size: 3em;
+  color: #413a3a; }
+
+span {
+  font-weight: 300; }
+
+.paragrafo {
+  margin-left: 20%;
+  width: 56%;
+  letter-spacing: 15%; }
+
+.section-foto {
+  padding: 0; }
+
+.foto {
+  background-image: url("../images/hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh; }
+
+#form {
+  margin-left: 18%; }
+
+.input-email {
+  position: relative;
+  padding-left: 5%;
+  z-index: 2;
+  background: linear-gradient(135deg, white, #fff5f5);
+  border-radius: 500px;
+  width: 69%;
+  height: 50px; }
+
+.input-email:focus {
+  outline: none; }
+
+::-webkit-input-placeholder {
+  font-size: 0.8em;
+  color: #ce9797; }
+
+:-moz-placeholder {
+  font-size: 0.8em;
+  color: #ce9797; }
+
+::-moz-placeholder {
+  font-size: 0.8em;
+  color: #ce9797; }
+
+:-ms-input-placeholder {
+  font-size: 0.8em;
+  color: #ce9797; }
+
+.btn {
+  position: absolute;
+  margin-left: -60px;
+  z-index: 2;
+  background-color: #f8bfbf;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  box-shadow: 0 10px 10px 0 #ecd5d5;
+  border-radius: 30px;
+  width: 10%;
+  height: 49px; }
+
+.btn:hover {
+  background: #fdeded;
+  background: linear-gradient(135deg, #fdeded, #f5b8b8);
+  color: #fff; }
+
+.btn:focus {
+  border: #f5b8b8;
+  box-shadow: 0 10px 10px 0 #fdeded; }
+
+.borda-padrao {
+  border: 0.5px solid #d7c6c6; }
+
+.borda-vermelha {
+  border: 2px solid #f96262; }
+
+.icone-erro {
+  background-image: url("../images/icon-error.svg");
+  background-position-x: 300px;
+  background-position-y: center;
+  background-repeat: no-repeat; }
+
+.texto-erro {
+  margin-left: 2%;
+  color: #ee8c8c; }
+
+footer {
+  background-color: #f2eded;
+  font-size: 0.6em; }
+
+@media (min-width: 320px) and (max-width: 567px) {
+  html {
+    height: 100%;
+    background: linear-gradient(135deg, white, #fff5f5); }
+
+  div.row {
+    display: flex;
+    flex-direction: column-reverse; }
+
+  nav.navbar {
+    padding: 0;
+    margin-left: 5%;
+    height: 8vh; }
+
+  a.navbar-brand {
+    padding: 0;
+    margin: 0; }
+
+  .logo-mobile {
+    width: 80%;
+    margin-bottom: 7%; }
+
+  section.principal {
+    background: linear-gradient(135deg, white, #fff5f5); }
+
+  h1 {
+    margin: 0;
+    width: 100%;
+    text-align: center; }
+
+  .paragrafo {
+    margin-top: 3%;
+    margin-left: 0;
+    padding: 5%;
+    width: 100%;
+    text-align: center; }
+
+  .foto {
+    background-image: url("../images/hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh; }
+
+  #form {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 5%; }
+
+  .btn {
+    width: 20%; } }
+@media (min-width: 568px) and (max-width: 991px) {
+  html {
+    height: 100%;
+    background: linear-gradient(135deg, white, #fff5f5); }
+
+  div.row {
+    display: flex;
+    flex-direction: column-reverse; }
+
+  section.principal {
+    background: linear-gradient(135deg, white, #fff5f5); }
+
+  .caixa-textos {
+    margin-top: 5%; }
+
+  h1 {
+    margin: auto;
+    text-align: center; }
+
+  .paragrafo {
+    margin: auto;
+    padding: 3% 10%;
+    width: 100%;
+    text-align: center; }
+
+  .foto {
+    background-image: url("../images/hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh; }
+
+  .btn {
+    width: 15%; } }
+
+/*# sourceMappingURL=style.css.map */
