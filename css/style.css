@@ -1,31 +1,37 @@
 span, .paragrafo {
-  color: #ce9797; }
+  color: #ce9797; 
+}
 
 * {
   margin: 0;
   padding: 0;
   font-family: 'Josefin Sans', sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden; 
+}
 
 html {
-  height: 100%; }
+  height: 100%; 
+}
 
 .principal {
   background-image: url("../images/bg-pattern-desktop.svg");
   background-position-x: center;
-  background-size: cover; }
+  background-size: cover; 
+}
 
 .cabecalho {
-  height: 15%; }
+  height: 15%; 
+}
 
 .logo {
   margin-left: 20%;
   margin-top: 5%;
-  width: 20%; }
+  width: 20%; 
+}
 
 .caixa-textos {
-  height: 60%;
-  margin-top: 10%; }
+  margin-top: 10%; 
+}
 
 h1 {
   display: flex;
@@ -36,29 +42,35 @@ h1 {
   font-weight: 600;
   letter-spacing: 15px;
   font-size: 3em;
-  color: #413a3a; }
+  color: #413a3a; 
+}
 
 span {
-  font-weight: 300; }
+  font-weight: 300; 
+}
 
 .paragrafo {
   margin-left: 20%;
   width: 56%;
-  letter-spacing: 15%; }
+  letter-spacing: 15%; 
+}
 
 .section-foto {
-  padding: 0; }
+  padding: 0; 
+}
 
 .foto {
   background-image: url("../images/hero-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh; }
+  height: 100vh; 
+}
 
 #form {
   position: relative;
-  margin-left: 18%; }
+  margin-left: 18%; 
+}
 
 .input-email {
   position: relative;
@@ -68,7 +80,8 @@ span {
   border-radius: 500px;
   z-index: 2;
   width: 69%;
-  height: 50px; }
+  height: 50px; 
+}
 
 .label-email {
   width: 30%;
@@ -81,12 +94,14 @@ span {
   margin-left: 20px;
   margin-top: 2%;
   transition: 0.5s;
-  color: #ce9797; }
+  color: #ce9797; 
+}
 
 .input-email:focus + .label-email {
   top: -20%;
   z-index: 3;
-  transition: 0.2s; }
+  transition: 0.2s; 
+}
 
 .btn {
   position: absolute;
@@ -97,119 +112,151 @@ span {
   box-shadow: 0 10px 10px 0 #ecd5d5;
   border-radius: 30px;
   width: 10%;
-  height: 49px; }
+  height: 49px; 
+}
 
 .btn:hover {
   background: #fdeded;
   background: linear-gradient(135deg, #fdeded, #f5b8b8);
-  color: #fff; }
+  color: #fff; 
+}
 
 .btn:focus {
   border: #f5b8b8;
-  box-shadow: 0 10px 10px 0 #fdeded; }
+  box-shadow: 0 10px 10px 0 #fdeded; 
+}
 
 .borda-padrao {
-  border: 0.5px solid #d7c6c6; }
+  border: 0.5px solid #d7c6c6; 
+}
 
 .borda-vermelha {
-  border: 2px solid #f96262; }
+  border: 2px solid #f96262; 
+}
 
 .icone-erro {
   background-image: url("../images/icon-error.svg");
   background-position-x: 300px;
   background-position-y: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat; 
+}
 
 .texto-erro {
   margin-left: 2%;
-  color: #ee8c8c; }
+  color: #ee8c8c; 
+}
 
 footer {
   background-color: #f2eded;
-  font-size: 0.6em; }
+  font-size: 0.6em; 
+}
 
 @media (min-width: 320px) and (max-width: 567px) {
+
   html {
     height: 100%;
-    background: linear-gradient(135deg, white, #fff5f5); }
+    background: linear-gradient(135deg, white, #fff5f5); 
+  }
 
   div.row {
     display: flex;
-    flex-direction: column-reverse; }
+    flex-direction: column-reverse; 
+  }
 
   nav.navbar {
     padding: 0;
     margin-left: 5%;
-    height: 8vh; }
+    height: 8vh; 
+  }
 
   .logo-mobile {
     width: 30%;
-    margin-bottom: 7%; }
+    margin-bottom: 7%; 
+  }
 
   section.principal {
-    background: linear-gradient(135deg, white, #fff5f5); }
+    background: linear-gradient(135deg, white, #fff5f5); 
+  }
 
   h1 {
     margin: 0;
     width: 100%;
-    text-align: center; }
+    text-align: center; 
+  }
 
   .paragrafo {
     margin-top: 3%;
     margin-left: 0;
     padding: 5%;
     width: 100%;
-    text-align: center; }
+    text-align: center; 
+  }
 
   .label-email {
-    margin-left: 20%; }
+    margin-left: 20%; 
+  }
 
   .foto {
     background-image: url("../images/hero-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 35vh; }
+    height: 35vh; 
+  }
 
   #form {
     margin: 0;
     width: 100%;
     text-align: center;
-    margin-top: 5%; }
+    margin-top: 5%; 
+  }
 
   .btn {
-    width: 20%; } }
+    width: 20%; 
+  } 
+}
+
 @media (min-width: 568px) and (max-width: 991px) {
+
   html {
     height: 100%;
-    background: linear-gradient(135deg, white, #fff5f5); }
+    background: linear-gradient(135deg, white, #fff5f5); 
+  }
 
   div.row {
     display: flex;
-    flex-direction: column-reverse; }
+    flex-direction: column-reverse; 
+  }
 
   section.principal {
-    background: linear-gradient(135deg, white, #fff5f5); }
+    background: linear-gradient(135deg, white, #fff5f5); 
+  }
 
   .caixa-textos {
-    margin-top: 5%; }
+    margin-top: 5%; 
+  }
 
   h1 {
     margin: auto;
-    text-align: center; }
+    text-align: center; 
+  }
 
   .paragrafo {
     margin: auto;
     padding: 3% 10%;
     width: 100%;
-    text-align: center; }
+    text-align: center; 
+  }
 
   .foto {
     background-image: url("../images/hero-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 65vh; }
+    height: 65vh; 
+  }
 
   .btn {
-    width: 15%; } }
+    width: 15%; 
+  } 
+}
 
 /*# sourceMappingURL=style.css.map */
