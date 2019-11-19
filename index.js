@@ -12,9 +12,10 @@ $(document).ready(function(){
                 input.removeClass("borda-vermelha").removeClass("icone-erro");
                 texto.text(' ');
                 input.addClass("borda-padrao");
-               
-    
-            }else{
+            
+            }
+            
+            else{
                 input.addClass("borda-vermelha").addClass("icone-erro");
                 input.removeClass("borda-padrao");
                 texto.addClass(".texto-erro").text("Please provide a valid email");
